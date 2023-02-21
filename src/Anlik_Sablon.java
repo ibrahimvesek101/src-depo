@@ -9,11 +9,9 @@ public class Anlik_Sablon {
         System.out.print("sayı giriniz : ");
         int sayi = input.nextInt();
 
-
         Scanner input= new Scanner(System.in);
         System.out.print("metin giriniz : ");
         String metin = input.nextLine();
-
          */
 
 
