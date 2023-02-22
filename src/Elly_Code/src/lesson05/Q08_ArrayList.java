@@ -5,7 +5,8 @@ import java.util.List;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Q08_ArrayList {
+public class
+Q08_ArrayList {
 
 
     public static void main(String[] args) {
