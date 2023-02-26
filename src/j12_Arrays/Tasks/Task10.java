@@ -24,6 +24,7 @@ public class Task10 {
 
     }
 
+
     private static int[] arrTersIsaretle1(int[] ebıkGabık) {
         for (int i = 0; i < ebıkGabık.length; i++) {
             ebıkGabık[i] *=1;// arrTersIsaretle(arr)->method call edilirse arr - işaretleneceği için 1 ile çarpılmalı

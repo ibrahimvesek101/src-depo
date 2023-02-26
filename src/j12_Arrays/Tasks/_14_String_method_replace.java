@@ -11,6 +11,7 @@ public class _14_String_method_replace {
         HellK WKrld
          */
 
-
+        String str = "Hello World";
+        System.out.println(str.replaceAll("o", "K"));
     }
 }

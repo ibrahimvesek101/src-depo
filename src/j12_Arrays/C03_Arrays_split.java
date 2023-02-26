@@ -16,5 +16,6 @@ public class C03_Arrays_split {
 
         System.out.println("Arrays.toString(arr1) = " + Arrays.toString(arr1));//[javaCAN'lara, selam, olsun]
         System.out.println("arr1.length = " + arr1.length);//3
+
     }
 }

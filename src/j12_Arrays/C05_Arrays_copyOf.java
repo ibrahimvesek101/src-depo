@@ -7,7 +7,7 @@ public class C05_Arrays_copyOf {
         //Array kopyalama...copyOf();->girilen arr'in newLength ekadar ilk elemanını kopyalar
 
         int arr[] = {1, 2, 46, 79, 80, 21, 27, 44};
-        int[] arr2 = Arrays.copyOf(arr, 3);//[2,2,46]
+        int[] arr2 = Arrays.copyOf(arr, 3);//[1,2,46]
 
         System.out.println("Arrays.toString(arr2) = " + Arrays.toString(arr2));//[1, 2, 46]
 

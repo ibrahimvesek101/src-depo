@@ -10,6 +10,13 @@ public class _07_array_max_value {
          */
 
         // code start here
-
+        int arr[] = {12, 2, 5, 15, 8};
+        int buyuk=arr[0];
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i]>buyuk){
+                buyuk=arr[i];
+            }
+        }
+        System.out.println(buyuk);
     }
 }

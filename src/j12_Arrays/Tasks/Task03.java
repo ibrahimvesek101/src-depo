@@ -13,6 +13,13 @@ public class Task03 {
         output [2, 3, 1]
         */
 
-    }
+        int arr[] = {1,2,3};
+        int yeniArr[]=new int[arr.length];
 
+        for (int i = 0; i < arr.length-1; i++) {
+            yeniArr[i+1]=arr[i];
+        }
+        yeniArr[0]=arr[arr.length-1];
+        System.out.println(Arrays.toString(yeniArr));
+    }
 }

@@ -11,6 +11,8 @@ public class _15_Word_Count {
 
         //Kodu aşağıya yazınız.
 
-
+        String str = "Remove white space from both ends of a string";
+        String arr[] = str.split(" ");
+        System.out.println(arr.length);
     }
 }

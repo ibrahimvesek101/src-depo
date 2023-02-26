@@ -11,7 +11,16 @@ public class _08_array_min_value {
 
         // Kodu aşağıya yazınız..
 
+        int arr[] = {14, 19, 5, 21};
 
+        int kucuk=arr[0];
+
+        for (int i = 0; i < arr.length; i++) {
+            if(arr[i]<kucuk){
+                kucuk=arr[i];
+            }
+        }
+        System.out.println(kucuk);
     }
 }
 

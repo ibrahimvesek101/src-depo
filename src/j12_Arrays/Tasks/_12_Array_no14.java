@@ -23,7 +23,18 @@ public class _12_Array_no14 {
 
         // code start here
 
-
+        boolean b=true;
+        int arr[] = {1,2,3};
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == 1 ){
+                for (int j = 0; j < arr.length; j++) {
+                    if(arr[j]==4){
+                        b=false;
+                    }
+                }
+            }
+        }
+        System.out.println(b);
 
     }
 }
