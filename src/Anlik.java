@@ -11,24 +11,23 @@ import java.util.List;
 public class Anlik {
     public static void main(String[] args) {
 
+/*
+        Girilen  string icinde en cok tekrar eden karakteri print eden code create ediniz.
+                input : JavaCAN'lara selam olsun
+        output: maximumCounts occurring character is : a
+                */
 
-        // Task-> verilen bir array'den istenmeyen elemanı silip  kalanlari
-        // yeni bir array'a atayıp print eden METHOD create ediniz
 
-        int arr[]={3,4,2,3,5,7,3,8,5,2,4};
+        Scanner input = new Scanner(System.in);
+        System.out.print("metin giriniz : ");
+        String metin = input.nextLine();
 
-        int istenmeyenEleman=3;
+        int count = 0;
 
-        istenmeyenSil(arr,istenmeyenEleman);
-    }
-
-    private static void istenmeyenSil(int arr[], int istenmeyenEleman) {
-        List<Integer> yeniList=new ArrayList<>();
+        String arr[] = metin.split("");
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]!=istenmeyenEleman){
-                yeniList.add(arr[i]);
-            }
+
         }
-        System.out.println(yeniList);
+
     }
 }

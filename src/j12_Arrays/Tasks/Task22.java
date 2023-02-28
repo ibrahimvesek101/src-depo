@@ -15,6 +15,13 @@ public class Task22 {
        output: maximumCounts occurring character is : a
         */
 
+        Scanner input = new Scanner(System.in);
+        System.out.print("metin giriniz : ");
+        String metin = input.nextLine();
+
+        String arr[] = metin.split("");
+
+
     }
 }
 

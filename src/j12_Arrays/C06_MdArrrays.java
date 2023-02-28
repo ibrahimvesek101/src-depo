@@ -60,7 +60,7 @@ public class C06_MdArrrays {
         System.out.println("yas[2] = " + yas[2]);//3
 
         System.out.println("arr3[2][1] = " + arr3[2][1]);//107-> index doğrudan inner iç array elemana ulaşır
-        System.out.println("arr3[2][1] = " + arr3[2]);//ref-> index doğrudan inner iç array ref ulaşır
+        System.out.println("arr3[2] = " + arr3[2]);//ref-> index doğrudan inner iç array ref ulaşır
         //MdArray istenen eleman print etme için istenen elamanın tum index değerleri (dış iç array index) girilmeli
 
     }

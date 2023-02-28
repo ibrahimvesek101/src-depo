@@ -2,6 +2,7 @@ package j12_Arrays.Tasks;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Task20 {
     public static void main(String[] args) {
@@ -10,19 +11,19 @@ public class Task20 {
 
         int arr[] = {3, 4, 2, 3, 5, 7, 3, 8, 5, 2, 4};
 
-        int istenmeyenSayi = 3;
+        Scanner input = new Scanner(System.in);
+        System.out.print("silmek istediğiniz sayıyı giriniz : ");
+        int sayi = input.nextInt();
 
-        istenmeyenSil(arr, istenmeyenSayi);
+        sayiSil(arr, sayi);
+
     }
 
-    private static void istenmeyenSil(int[] arr, int istenmeyenSayi) {
+    private static void sayiSil(int[] arr, int sayi) {
 
         List<Integer> yeniList = new ArrayList<>();
-
         for (int i = 0; i < arr.length; i++) {
-
-            if(arr[i] != istenmeyenSayi) {
-
+            if (arr[i] !=sayi) {
                 yeniList.add(arr[i]);
             }
         }
