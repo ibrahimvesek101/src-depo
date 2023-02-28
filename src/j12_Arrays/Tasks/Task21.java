@@ -11,6 +11,7 @@ public class Task21 {
 
 
         System.out.println("merhaba");
+        System.out.println("merhaba");
 
 
 
