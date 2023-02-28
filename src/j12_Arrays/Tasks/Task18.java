@@ -9,16 +9,14 @@ public class Task18 {
         // output : int yeniArr[]={6,11,-7}
         int arr[][] = {{1, 2, 3}, {19, -8}, {24, 10, -41}};
 
+
         int yeniArr[] = new int[arr.length];
 
-        for (int kat = 0; kat < arr.length; kat++) {//kat elamanlarına ulaşan tekrar
-            for (int daire = 0; daire < arr[kat].length; daire++) {//dire elamanlarına ulaşan tekrar
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
 
-                yeniArr[kat] += arr[kat][daire];//herkatın daireler toplamı yeniArr katına atandı
-
-
+                yeniArr[i] += arr[i][j];
             }
         }
-        System.out.println("Arrays.toString(yeniArr) = " + Arrays.toString(yeniArr));// [6, 11, -7]
-    }
-}
+        System.out.println(Arrays.toString(yeniArr));
+    }}

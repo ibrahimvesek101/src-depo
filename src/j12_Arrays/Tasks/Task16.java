@@ -2,20 +2,20 @@ package j12_Arrays.Tasks;
 
 public class Task16 {
     public static void main(String[] args) {
+
         // task-> sayi arr'deki son elemanların çarpımını print eden code create ediniz
 
-        int arr[][]={
-                {3,5},//0. kat
-                {2,4,1},//1. kat
-                {6,1,2,2},//2. kat
+        int arr[][] = {
+                {3, 5},//0. kat
+                {2, 4, 1},//1. kat
+                {6, 1, 2, 2},//2. kat
         };
-        int crpm=1; // çarpım için boş kutu.
+        int carpim = 1;
 
-        for (int kat = 0; kat <arr.length ; kat++) {
+        for (int i = 0; i < arr.length; i++) {
+            carpim *= arr[i][arr[i].length - 1];
 
-                crpm*=arr[kat][arr[kat].length-1];
         }
-        System.out.println("crpm = " + crpm);  // son elemanlar.
-
+        System.out.println("son elemanların carpimı = " + carpim);
     }
 }
