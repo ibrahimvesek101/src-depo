@@ -7,6 +7,10 @@ import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class Anlik {
     public static void main(String[] args) {
@@ -17,17 +21,21 @@ public class Anlik {
         output: maximumCounts occurring character is : a
                 */
 
-
         Scanner input = new Scanner(System.in);
-        System.out.print("metin giriniz : ");
+        System.out.println("Lütfen ters yazmak istediğiniz metni giriniz : ");
         String metin = input.nextLine();
 
-        int count = 0;
+        tersineCevir(metin);
 
-        String arr[] = metin.split("");
-        for (int i = 0; i < arr.length; i++) {
+
+    }
+
+    private static void tersineCevir(String str) {
+        String tersStr = "";
+        for (int i = str.length()-1; i >= 0; i--) {
+            tersStr += str.charAt(i);
 
         }
-
+        System.out.println(tersStr);
     }
 }

@@ -1,5 +1,7 @@
 package j19_StringBuilder;
+
 import java.time.LocalTime;
+
 public class C01_StringBuilder {
     public static void main(String[] args) {
            /*
@@ -36,13 +38,13 @@ public class C01_StringBuilder {
          */
         System.out.println("method öncesi name = " + name);//QA tester Ali bey
 
-        strBirlestir(name);//name makyaja dubloru gitti->QA tester Ali bey method call başarılı çalıştı dewamkee
+       strBirlestir(name);//name makyaja dubloru gitti->QA tester Ali bey method call başarılı çalıştı dewamkee
 
         System.out.println("method sonrası  name = " + name);//QA tester Ali bey->immutable
 
         // task-> 3333 tekrarlı loop ile String variable ve StringBuilder obj run time surelerini karşılaştıran code create ediniz
-        String str="";
-        StringBuilder sb=new StringBuilder("");
+      String str="";
+      StringBuilder sb=new StringBuilder("");
 
         System.out.println("  ***  str loop   ***  ");
 
@@ -61,11 +63,14 @@ public class C01_StringBuilder {
 
         LocalTime sbBitis = LocalTime.now();//sb bitiş zamanı
         System.out.println("StringBuilder hızı : "+(sbBitis.getNano()-sbBaslangic.getNano()));
-        
+
+
     }//main sonu
 
     private static void strBirlestir(String name) {
 
         System.out.println(name +" method call başarılı çalıştı dewamkee ");
     }
+
+
 }//class sonu

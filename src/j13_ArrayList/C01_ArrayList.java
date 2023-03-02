@@ -54,6 +54,7 @@ public class C01_ArrayList {
 
  */
         //List create etme ve değer atama..
+
         ArrayList<Integer> listSayi = new ArrayList<>();//boş br integer type list tanımlandı
         //1. yol add(); method
         System.out.println("listSayi = " + listSayi);//[]
