@@ -28,5 +28,6 @@ public class Anlik_01 {
          x/=10;
         }
         return toplam;
+
     }
 }
