@@ -16,6 +16,7 @@ public class Anlik {
          * INPUT : list1={"Ali","Veli","Ayse","Fatma","Omer"}
          * OUTPUT : [Veli,Omer]
          */
+
         ArrayList<String> isimList=new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
         ArrayList<String> silinecek =new ArrayList<>();
 
@@ -24,7 +25,6 @@ public class Anlik {
             isimList.get(i).contains("a") ||isimList.get(i).contains("A")){
                 silinecek.add(isimList.get(i));
             }
-
         }
         System.out.println("isimList = " + isimList);
         System.out.println("silinecekler = "+silinecek);
@@ -32,4 +32,5 @@ public class Anlik {
         System.out.println("isimList = " + isimList);
 
     }
+
 }
