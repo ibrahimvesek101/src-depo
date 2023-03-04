@@ -30,5 +30,6 @@ public class Anlik {
         System.out.println("silinecekler = "+silinecek);
         isimList.removeAll(silinecek);
         System.out.println("isimList = " + isimList);
+
     }
 }
