@@ -17,7 +17,7 @@ public class Task09bucuk {
 
         double toplam = 0;//list karelerini toplamı için boş kutu
 
-        while (listSayılari!=0) {//while döngü girilen sayı q değilse action alır
+        while (listSayılari!=0) {//while döngü girilen sayı 0 değilse action alır
             System.out.println(" Agam sayı giresen : ");
             listSayılari=input.nextInt();//lisSayilar 0 olan başlangıc değeri yerine inputtan gelen değer atandı
             list.add(listSayılari);//listsayılar liste eklendi

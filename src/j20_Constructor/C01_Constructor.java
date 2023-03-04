@@ -3,7 +3,7 @@ package j20_Constructor;
 public class C01_Constructor {//class bası-> class level
 
     //fields-> obj alabileceği variable'lar
-    String str;//clas level'da create edilen initial edilmemiş instance(obj) variable
+    String str;//clas level'da create edilen initial edilmemiş instance(obj) variable;
     String selam = "selam javaCAN";//clas level'da create edilen initial edilmiş instance(obj) variable
     //  C01_Constructor obj1 = new C01_Constructor();//p'six defult cons. ile obj1 create edildi class level'da
 
@@ -16,7 +16,8 @@ public class C01_Constructor {//class bası-> class level
     4- cons. return type olmaz method'dan ayıran en temel  özelliğidir.
     5- Class tanımlandığında java default(p'siz) cons. kendi create eder.
     6-Fields-> obj'nin uretilirken alacagı değer variables
-    7-bir class'da bir den çok cons. tanımlanabilir
+    7-bir class'da bir den çok cons. tanımlanabilir.
+
      */
 
         // ClassName(obj Data Type)       objName   = new      Constructor

@@ -1,41 +1,34 @@
-import java.lang.reflect.Array;
+import java.util.*;
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.Scanner;
-import java.awt.*;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.List;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+
+import static java.util.Arrays.asList;
+import static java.util.Arrays.sort;
 
 public class Anlik {
     public static void main(String[] args) {
+        /* TASK :
 
-/*
-        Girilen  string icinde en cok tekrar eden karakteri print eden code create ediniz.
-                input : JavaCAN'lara selam olsun
-        output: maximumCounts occurring character is : a
-                */
+         * Input olarak verilen listteki isimlerden
+         * icinde 'a' ve 'A' harfi bulunanlari silen bir code create ediniz.
+         *
+         * INPUT : list1={"Ali","Veli","Ayse","Fatma","Omer"}
+         * OUTPUT : [Veli,Omer]
+         */
+        ArrayList<String> isimList=new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
+        ArrayList<String> silinecek =new ArrayList<>();
 
-        Scanner input = new Scanner(System.in);
-        System.out.println("Lütfen ters yazmak istediğiniz metni giriniz : ");
-        String metin = input.nextLine();
-
-        tersineCevir(metin);
-
-
-    }
-
-    private static void tersineCevir(String str) {
-        String tersStr = "";
-        for (int i = str.length()-1; i >= 0; i--) {
-            tersStr += str.charAt(i);
+        for (int i = 0; i < isimList.size(); i++) {
+            if(
+            isimList.get(i).contains("a") ||isimList.get(i).contains("A")){
+                silinecek.add(isimList.get(i));
+            }
 
         }
-        System.out.println(tersStr);
+        System.out.println("isimList = " + isimList);
+        System.out.println("silinecekler = "+silinecek);
+        isimList.removeAll(silinecek);
+        System.out.println("isimList = " + isimList);
     }
 }

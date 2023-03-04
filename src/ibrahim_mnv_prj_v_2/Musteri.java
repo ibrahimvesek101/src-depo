@@ -7,6 +7,7 @@ public class Musteri {
     static Scanner input = new Scanner(System.in);
 
     public static void musteriMenu() {
+
         System.out.print("\n***** Menü *****\n1-Bakiye Öğrenmek\n" +
                 "2-Ürün Listesi\n" +
                 "3-Ürün Fiyatları\n" +

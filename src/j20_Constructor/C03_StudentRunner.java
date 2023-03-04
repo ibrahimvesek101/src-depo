@@ -4,6 +4,7 @@ public class C03_StudentRunner {
 
     public static void main(String[] args) {//main level
 
+
         C03_Student ogrc1=new C03_Student();//C03_Student classdan ogrc1 obj create edildi.
         ogrc1.ad="Vedat";
         ogrc1.soyAd="offer";

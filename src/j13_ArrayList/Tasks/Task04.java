@@ -18,17 +18,17 @@ public class Task04 {
          * OUTPUT : [Veli,Omer]
          */
         ArrayList<String> isimList=new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
-        ArrayList<String> aOlmayanİsimList = new ArrayList<>();
+        ArrayList<String> silinecek =new ArrayList<>();
+
         for (int i = 0; i < isimList.size(); i++) {
-            if(!isimList.get(i).toLowerCase().contains("a")){
-                aOlmayanİsimList.add(isimList.get(i));
+            if(
+                    isimList.get(i).contains("a") ||isimList.get(i).contains("A")){
+                silinecek.add(isimList.get(i));
             }
         }
-        System.out.println(aOlmayanİsimList);
-
-        isimList.clear(); //isimleri temizle
-        isimList.addAll(aOlmayanİsimList);
-
-        System.out.println(isimList);
+        System.out.println("isimList = " + isimList);
+        System.out.println("silinecekler = "+silinecek);
+        isimList.removeAll(silinecek);
+        System.out.println("isimList son hali = " + isimList);
     }
 }

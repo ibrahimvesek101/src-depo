@@ -2,7 +2,7 @@ package j13_ArrayList;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-public class C14_listConvertArray {
+public class  C14_listConvertArray {
     public static void main(String[] args) {
         //list'iarray'e cevirme ->toArray();
 
