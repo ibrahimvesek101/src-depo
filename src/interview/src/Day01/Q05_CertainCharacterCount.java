@@ -23,6 +23,7 @@ public class Q05_CertainCharacterCount {
             if(cumle.substring(i,i+1).equals(harf)) counter++; //
         }
 
+
         System.out.println(counter);
     }
 

@@ -17,19 +17,7 @@ public class Anlik {
          * OUTPUT : [Veli,Omer]
          */
 
-        ArrayList<String> isimList=new ArrayList<>(Arrays.asList("Ali","Veli","Ayse","Fatma","Omer"));
-        ArrayList<String> silinecek =new ArrayList<>();
 
-        for (int i = 0; i < isimList.size(); i++) {
-            if(
-            isimList.get(i).contains("a") ||isimList.get(i).contains("A")){
-                silinecek.add(isimList.get(i));
-            }
-        }
-        System.out.println("isimList = " + isimList);
-        System.out.println("silinecekler = "+silinecek);
-        isimList.removeAll(silinecek);
-        System.out.println("isimList = " + isimList);
 
     }
 
