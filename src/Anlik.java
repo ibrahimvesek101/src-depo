@@ -9,7 +9,6 @@ import static java.util.Arrays.sort;
 public class Anlik {
     public static void main(String[] args) {
 
-
     }
 
 }
