@@ -21,5 +21,7 @@ public class _01_arraylist1 {
     public static void main(String[] args) {
 
 
+
+
     }
 }
