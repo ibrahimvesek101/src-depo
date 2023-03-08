@@ -20,7 +20,18 @@ public class _03_arraylist3 {
      */
 
     public static void main(String[] args) {
+        ArrayList<String> list =new ArrayList<>(Arrays.asList("İstanbul" ,"New york" , "Ohio" , "Florida" , "Boston"));
 
+        System.out.println("getLength(list) = " + getLength(list));
 
+    }
+
+    private static ArrayList<Integer> getLength(ArrayList<String> list) {
+        ArrayList<Integer> uzunlukList = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            uzunlukList.add(list.get(i).length());
+        }
+
+        return uzunlukList;
     }
 }
