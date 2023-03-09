@@ -55,7 +55,5 @@ class BookRunner {
         Book b1 = new Book(kitab, yazar);
         System.out.println("b1 = " + b1);
 
-
-
     }
 }
