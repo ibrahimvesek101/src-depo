@@ -40,7 +40,6 @@ private String authorName;
                 ", ' Yazar adı : " + authorName + '\'';
     }
 }
-
 class BookRunner {
 
     public static void main(String[] args) {
@@ -55,4 +54,5 @@ class BookRunner {
         System.out.println("b1 = " + b1);
 
     }
+
 }
