@@ -33,7 +33,6 @@ private String authorName;
 
     //toString method...
 
-
     @Override
     public String toString() {
         return
