@@ -1,5 +1,8 @@
 package j13_ArrayList.Tasks;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class _11_prime_numbers {
 
     /*
@@ -17,7 +20,23 @@ public class _11_prime_numbers {
 
     public static void main(String[] args) {
 
+        Scanner input = new Scanner(System.in);
+        System.out.print("Lütfen pozitif bir tam sayı giriniz : ");
+        int sayi = input.nextInt();
 
+        ArrayList<Integer> asalList = new ArrayList<>();
+        int sayac = 0;
+        for (int i = 2; i <= sayi; i++) {
+            int kontrol = 0;
+            for (int j = 2; j < i; j++) {
+                if (sayi % i == 0) {
+                    kontrol=1;
+                    break;
+
+                }
+            }
+            System.out.print(i + " ");
+        }
     }
 }
 

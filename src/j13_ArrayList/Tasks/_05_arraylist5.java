@@ -15,8 +15,18 @@ public class _05_arraylist5 {
      */
 
     public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("İstanbul", "Balıkesir", "Ankara", "Bursa"));
 
+        System.out.println("rotateList(arrayList) = " + rotateList(arrayList));
 
+    }
+
+    private static ArrayList rotateList(ArrayList list) {
+        ArrayList<String> tersList = new ArrayList<>();
+        for (int i = list.size() - 1; i >= 0; i--) {
+            tersList.add((String) list.get(i));
+        }
+        return tersList;
     }
 }
 

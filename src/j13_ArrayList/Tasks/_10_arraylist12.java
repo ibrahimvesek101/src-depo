@@ -22,7 +22,21 @@ public class _10_arraylist12 {
      */
 
     public static void main(String[] args) {
+        ArrayList <Integer> arrayList = new ArrayList<>(Arrays.asList(1,5,22,10,20,14,8,25,30,28));
 
+        System.out.println("rangeBtw(arrayList, 20, 30) = " + rangeBtw(arrayList, 10, 20));
 
+    }
+
+    private static int rangeBtw(ArrayList list, int min, int max) {
+        int sayac = 0;
+        for (int i = 0; i < list.size(); i++) {
+
+            if((int)list.get(i)>=min &&(int)list.get(i)<=max){
+                sayac++;
+                System.out.print(list.get(i)+" ");
+            }
+        }
+        return sayac;
     }
 }

@@ -21,7 +21,22 @@ public class _04_arraylist4 {
      */
 
     public static void main(String[] args) {
+        ArrayList<String> arrayList = new ArrayList<>(Arrays.asList("yellow", "red", "blue", "red", "blue"));
 
+        String s1 = "blue";
+        String s2 = "yeniRenk";
 
+        System.out.println("changeInArraylist(arrayList, s1, s2) = " + changeInArraylist(arrayList, s1, s2));
+
+    }
+
+    private static ArrayList<String> changeInArraylist(ArrayList<String> list, String str1, String str2) {
+
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).equals(str1)) {
+                list.set(i, str2);
+            }
+        }
+        return list;
     }
 }

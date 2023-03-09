@@ -23,6 +23,24 @@ public class _07_arraylist7 {
 
     public static void main(String[] args) {
 
+        ArrayList<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2,17, 3,34,4,5));
+        ArrayList<Integer> list2 = new ArrayList<>(Arrays.asList(3, 4, 5,17,34));
 
+        System.out.println("common_values(list1, list2) = " + common_values(list1, list2));
+
+    }
+
+    private static ArrayList<Integer> common_values(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        ArrayList<Integer> ortakList = new ArrayList<>();
+        for (int i = 0; i < list1.size(); i++) {
+            for (int j = 0; j < list2.size(); j++) {
+                if (list1.get(i).equals(list2.get(j))) {
+                    ortakList.add(list1.get(i));
+                }
+            }
+        }
+
+
+        return ortakList;
     }
 }

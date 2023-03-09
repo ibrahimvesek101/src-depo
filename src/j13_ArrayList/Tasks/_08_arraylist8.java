@@ -1,7 +1,6 @@
 package j13_ArrayList.Tasks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class _08_arraylist8 {
 
@@ -16,7 +15,16 @@ public class _08_arraylist8 {
      */
 
     public static void main(String[] args) {
+        ArrayList <Integer> arrayList = new ArrayList<>(Arrays.asList(5,8,10,3,4,6,7));
+        System.out.println("secondMax(arrayList) = " + secondMax(arrayList));
 
+    }
 
+    private static int secondMax(ArrayList list) {
+        Collections.sort(list);
+        for (int i = 0; i < list.size(); i++) {
+
+        }
+        return (int) list.get(list.size() - 2);
     }
 }
