@@ -1,7 +1,5 @@
 package j24_Encapsulation.Tasks.task05;
-
 import java.util.Scanner;
-
 public class Book {// outher Class level
     //fields...
 private String bookName;
@@ -52,7 +50,5 @@ class BookRunner {
 
         Book b1 = new Book(kitab, yazar);
         System.out.println("b1 = " + b1);
-
-
     }
 }

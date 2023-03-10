@@ -29,16 +29,44 @@ public class _11_prime_numbers {
         for (int i = 2; i <= sayi; i++) {
             int kontrol = 0;
             for (int j = 2; j < i; j++) {
-                if (sayi % i == 0) {
-                    kontrol=1;
+                if (i % j == 0) {
+                    kontrol = 1;
                     break;
-
                 }
             }
-            System.out.print(i + " ");
+            if (kontrol == 0) {
+                sayac++;
+                System.out.print(i + " ");
+            }
         }
+        System.out.println();
+        System.out.println(sayi + " sayısına kadar " + sayac + " adet asal sayı vardır.");
     }
 }
 
 
+/*          2.yöntem
 
+        Scanner input=new Scanner(System.in);
+        System.out.print("Lütfen pozitif bir tam sayı giriniz : ");
+        int sayi=input.nextInt();
+
+        ArrayList<Integer> list=new ArrayList<>();
+        int sayac=0;
+
+        for(int i=2;i<=sayi;i++){
+        boolean sonuc=true;
+        for(int j=2;j<i; j++){
+        if(i%j==0){
+        sonuc=false;
+        }
+        }if(sonuc){
+        list.add(i);
+        }
+
+        }System.out.println(list);
+        System.out.println(sayi+" sayısına kadar "+list.size()+" adet asal sayı vardır.");
+        }
+        }
+
+        */
