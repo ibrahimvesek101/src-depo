@@ -31,5 +31,7 @@ public class C02_nCopies {
         }
         System.out.println("sayilar = " + sayilar);//[1,2,3,4,5,6,7,8,9,10]
 
+
+
     }
 }
