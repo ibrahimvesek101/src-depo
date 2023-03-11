@@ -17,6 +17,14 @@ public class Task07 {
          */
 
 
+        ArrayList<String> isimler=new ArrayList<>(Arrays.asList("Haluk","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"));
 
+        String depo2;
+        depo2=isimler.get(2);
+
+        isimler.set(2,isimler.get(7));
+        isimler.set(7, depo2);
+
+        System.out.println("isimler = " + isimler);
     }
 }

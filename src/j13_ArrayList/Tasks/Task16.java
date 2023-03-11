@@ -1,6 +1,7 @@
 package j13_ArrayList.Tasks;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Task16 {
 
@@ -16,5 +17,17 @@ public class Task16 {
      */
 
     public static void main(String[] args) {
+
+        ArrayList<ArrayList> list1 = new ArrayList<>();
+
+        ArrayList<String> calisanlar = new ArrayList<>(Arrays.asList("ahmet","mehmet"));
+        ArrayList<String> isverenler = new ArrayList<>(Arrays.asList("Muhammet","ibrahim"));
+        ArrayList<String> sirketler = new ArrayList<>(Arrays.asList("Nasa","IBM"));
+
+        list1.add(isverenler);
+        list1.add(calisanlar);
+        list1.add(sirketler);
+        System.out.println("list1 = " + list1);
+
     }
 }

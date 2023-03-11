@@ -1,13 +1,13 @@
 package j13_ArrayList.Tasks;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 import java.util.Scanner;
 
 public class Task12_Manav {
-
-
+    static Scanner input = new Scanner(System.in);
+    static int kilo = 0;
+    static int urunSecim = 0;
+    static int urunFiyat = 0;
+    static int toplamFiyat = 0;
 
 
     public static void main(String[] args) {
@@ -24,8 +24,48 @@ public class Task12_Manav {
          * */
 
 
+        urunSecTutar();
+    }
+
+    private static void urunSecTutar() {
+        System.out.print("1-Elma 5 Tl\n2-Portakal 10 TL\n3-Nar 15 TL\n4-Kivi 20TL\" +\n5-Muz 25TL" +
+                "\nLütfen almak istediğiniz ürün numarasını giriniz : ");
+        int secim = input.nextInt();
+        System.out.print("kaç kilo satın almak istiyorsunuz? ");
+        int kilo = input.nextInt();
+        switch (secim) {
+            case 1:
+                toplamFiyat += kilo * 5;
+                break;
+            case 2:
+                toplamFiyat += kilo * 10;
+                break;
+            case 3:
+                toplamFiyat += kilo * 15;
+                break;
+            case 4:
+                toplamFiyat += kilo * 20;
+                break;
+            case 5:
+                toplamFiyat += kilo * 25;
+                break;
+        }
+        tamamDevam();
     }
 
 
+    private static void tamamDevam() {
+        System.out.println("1-Alışverişe Devam\n2-Alışverişi bitir.\nLütfen seçiminizi yapınız : ");
+        int a = input.nextInt();
+        if (a == 1) {
+            urunSecTutar();
+        } else if (a == 2) {
+            System.out.println("toplam fiyat = " + toplamFiyat+" TL");
+        } else {
+            System.out.println("doğru seçim yapınız");
+        }
+    }
+
 }
+
 
