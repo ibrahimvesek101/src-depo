@@ -12,7 +12,7 @@ public class Task16 {
     Create 3 ArrayLists which are Employees, Employers, Companies
     Store this 3 ArrayList in 2D ArrayList
     String ArrayList'leri depolayabilen 2D ArrayList oluşturun
-    Çalışanlar, İşverenler, Şirketler olmak üzere 3 DiziListesi oluşturun
+    Çalışanlar,  İşverenler,Şirketler olmak üzere 3 DiziListesi oluşturun
     Bu 3 ArrayList'i 2D ArrayList'te saklayın
      */
 

@@ -9,4 +9,5 @@ public class Kedi extends Memeliler {// Memeli parent e child olarak yapıld
     public void cırmala() {
         System.out.println("Kedi tırmalar.");
     }
+
 }

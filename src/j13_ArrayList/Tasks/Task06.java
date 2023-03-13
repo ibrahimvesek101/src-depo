@@ -19,12 +19,17 @@ public class Task06 {
             int sayi = input.nextInt();
             list.add(sayi);
         }
-            System.out.println("list = "+list);
-            System.out.println("listTekElemanlar(list) = " + listTekElemanlar(list));
+        System.out.println("list = " + list);
+
+        listTekElemanlar(list);
+
+        System.out.println("listTekElemanlar(list) = " + listTekElemanlar(list));
     }
 
     private static ArrayList listTekElemanlar(ArrayList<Integer> list) {
+
         ArrayList<Integer> listTek = new ArrayList<>();
+
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i) % 2 == 0) {
                 continue;
@@ -33,6 +38,6 @@ public class Task06 {
             }
 
         }
-            return listTek;
+        return listTek;
     }
 }

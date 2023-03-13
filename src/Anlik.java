@@ -10,11 +10,8 @@ import static java.util.Arrays.sort;
 public class Anlik {
     public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-        System.out.print("Lütfen pozitif bir tam sayı giriniz : ");
-        int sayi = input.nextInt();
+        Object obj = new String("asd");
 
-        ArrayList<Integer> list = new ArrayList<>();
-
+        System.out.println(obj);
     }
 }
