@@ -8,5 +8,6 @@ public class SubClass extends SuperClass {
     @Override
     public String ebikKabık() {
         return "Agam SubClass'dan selam dewamkeee. ";
+
     }
 }
